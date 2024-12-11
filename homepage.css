@@ -183,13 +183,16 @@ header {
         }
 
         & .imgContainer {
-
-            margin: 2rem;
+            margin: 15%;
 
             & .about-me-img {
-
+                opacity: 0.6;
                 width: 100%;
-                padding: 15%;
+                transition: transform 0.8s ease, filter 1s ease;
+            }
+            & .about-me-img:hover {
+                filter: drop-shadow(5px 5px 10px white);
+                transform: scale(1.05);
             }
         }
     }
