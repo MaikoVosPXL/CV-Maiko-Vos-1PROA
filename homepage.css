@@ -194,6 +194,13 @@ header {
                 filter: drop-shadow(5px 5px 10px white);
                 transform: scale(1.05);
             }
+            & .about-me-img:active {
+                pointer-events: none;
+                border: 5px solid white;
+                transform: scale(1.05);
+                transition: border 0.2s ease, filter 1s ease;
+            }
+
         }
     }
 }
