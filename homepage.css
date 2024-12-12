@@ -136,7 +136,7 @@ header {
 }
 
 .section-about-me {
-
+    height: 100vh;
     background-color: #151515;
     position: relative;
 
@@ -200,9 +200,100 @@ header {
                 transform: scale(1.05);
                 transition: border 0.2s ease, filter 1s ease;
             }
-
         }
     }
 }
+
+.work-exp-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515f0;
+    z-index: -1;
+
+
+    & .work-exp-background {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        object-fit: fill;
+        opacity: 0.2;
+        z-index: 1;
+    }
+
+    & .shadow-work-exp{
+        align-self: flex-start;
+        background: linear-gradient(to bottom, #151515, transparent);
+        position: absolute;
+        height: 231px;
+        width: 100%;
+        left: 0;
+        z-index: 2;
+    }
+
+    & .work-exp-container {
+        height: 90%;
+        width: 100vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+
+        & .work-exp-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            border-left: 4px solid #fdfdfd;
+            padding-left: 40px;
+            max-width: 600px;
+            width: 50%;
+            height: 100%;
+            justify-content: space-between;
+
+            & .work-exp-item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -41px;
+                    top: 0;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #03080a;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                }
+
+                & .content {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    background-color: #1515154a;
+                    padding: 7px 12px;
+                    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                    margin-left: 30px;
+
+                    & h3{
+                        color: yellowgreen;
+                    }
+                }
+
+
+                &:last-child::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 
 
