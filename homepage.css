@@ -312,15 +312,26 @@ header {
 }
 
 .skills-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+            "left right1"
+            "left right2";
+    align-items: center;
+    justify-content: center;
     height: 100vh;
+    background: #151515;
+    color: white;
 
     & .skills-section {
         display: flex;
         height: 100%;
-        color: white;
-        background: grey;
+        grid-area: left;
 
-        & .shadow-skills-top{
+
+
+        & .shadow-skills-top {
             align-self: flex-start;
             background: linear-gradient(to bottom, #151515, transparent);
             position: absolute;
@@ -330,7 +341,7 @@ header {
             z-index: 2;
         }
 
-        & .shadow-skills-bottom{
+        & .shadow-skills-bottom {
             align-self: flex-end;
             background: linear-gradient(to top, #151515, transparent);
             position: absolute;
@@ -341,48 +352,137 @@ header {
         }
 
         & .skills-container {
+            display: flex;
             height: 100%;
             width: 100%;
             z-index: 3;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:"left right";
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             & .hard-skills {
-                grid-area: left;
+                margin: 5%;
+                height: 26%;
+
+                & .hard-table {
+                    background-image: url("assets/leaves.jpg");
+                    width: 60vw;
+                    height: 100%;
+                    border-collapse: collapse;
+
+                    & thead{
+                        height: 24%;
+                        text-decoration: underline;
+                    }
+
+                    & td {
+                        text-align: center;
+                        border: 1px solid #151515;
+                    }
+
+                    & th {
+                        border: 1px solid #151515;
+                        background: linear-gradient(90deg, #151515 10%, transparent 60%, #151515 90%);
+                    }
+
+                    & tbody tr:nth-child(odd) {
+                        background: linear-gradient(90deg, #151515 10%, #faebd754 60%, #151515 90%);
+                    }
+
+                    & tbody tr:nth-child(even) {
+                        background: linear-gradient(90deg, #151515 10%, transparent 60%, #151515 90%);
+                    }
+                }
             }
 
             & .soft-skills {
-                grid-area: right;
+                margin: 5%;
+                height: 50%;
+
+                & thead{
+                    height: 14%;
+                    text-decoration: underline;
+                }
+
+                & .soft-table {
+                    background-image: url("assets/leaves.jpg");
+                    height: 100%;
+                    width: 60vw;
+                    border-collapse: collapse;
+
+                    & td {
+                        text-align: center;
+                        width: 100%;
+                        border: 1px solid #151515;
+                    }
+
+                    & th {
+                        border: 1px solid #151515;
+                        background: linear-gradient(90deg, #151515 10%, transparent 60%, #151515 90%);
+                    }
+
+
+                    & tbody tr:nth-child(odd) {
+                        background: linear-gradient(90deg, #151515 10%, #faebd754 60%, #151515 90%);
+                    }
+
+                    & tbody tr:nth-child(even) {
+                        background: linear-gradient(90deg, #151515 10%, transparent 60%, #151515 90%);
+                    }
+                }
             }
+        }
+    }
 
+    & .diploma-section{
+        grid-area: right1;
+        color: white;
+        z-index: 3;
+        & .year{
+            margin-top: 5%;
+        }
+    }
 
+    & .languages-section{
+        grid-area: right2;
+        color: white;
+        z-index: 3;
+
+        & .lang-title{
+            text-decoration: underline;
+            margin-bottom: 1%;
+        }
+
+        & p{
+           margin-top: 1%;
         }
     }
 }
 
-.footer-section{
+
+.footer-section {
     height: 10vh;
     display: flex;
     background-color: #151515;
     color: white;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid white;
 
-    & .footer-left{
+    & .footer-left {
         display: flex;
         margin-left: 15px;
     }
 
-    & .footer-middle{
+    & .footer-middle {
         display: flex;
     }
 
-    & .footer-right{
+    & .footer-right {
         display: flex;
         margin-right: 15px;
 
-        & .top-text{
+        & .top-text {
             margin-left: 15px;
         }
     }
