@@ -20,6 +20,7 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #000;
 
     & .nav-header {
         position: absolute;
@@ -147,7 +148,7 @@ header {
     & .shadow {
         position: absolute;
         bottom: 100%;
-        height: 300px;
+        height: 350px;
         width: 100%;
         left: 0;
         z-index: 4;
@@ -189,6 +190,11 @@ header {
         & .imgContainer {
             margin: 15%;
 
+
+            & .img-link{
+
+            }
+
             & .about-me-img {
                 opacity: 0.6;
                 width: 100%;
@@ -203,6 +209,7 @@ header {
                 border: 5px solid white;
                 transform: scale(1.05);
                 transition: border 0.2s ease, filter 1s ease;
+
             }
         }
     }
@@ -256,6 +263,10 @@ header {
         align-items: center;
         z-index: 3;
 
+        & .work-exp-title {
+            font-size: 1.5rem;
+        }
+
         & .work-exp-list {
             list-style: none;
             display: flex;
@@ -287,6 +298,10 @@ header {
                     transform: translateX(-50%);
                 }
 
+                & .item-title{
+                    font-weight: bold;
+                }
+
                 & .content {
                     display: flex;
                     align-items: flex-start;
@@ -299,6 +314,9 @@ header {
 
                     & h3 {
                         color: #8ed233c4;
+                    }
+                    & span{
+                        font-style: italic;
                     }
                 }
 
@@ -364,6 +382,13 @@ header {
                 margin: 5%;
                 height: 26%;
 
+                & .hard-text{
+                    display: none;
+                    & .hard-text-title{
+                        font-weight: bold;
+                    }
+                }
+
                 & .hard-table {
                     background-image: url("assets/leaves.jpg");
                     width: 60vw;
@@ -386,7 +411,7 @@ header {
                     }
 
                     & tbody tr:nth-child(odd) {
-                        background: linear-gradient(90deg, #151515 10%, #faebd754 60%, #151515 90%);
+                        background: linear-gradient(90deg, #151515 10%, #47454263 60%, #151515 90%);
                     }
 
                     & tbody tr:nth-child(even) {
@@ -399,6 +424,14 @@ header {
                 margin: 5%;
                 height: 50%;
 
+                & .soft-text{
+                    display: none;
+                    & .soft-text-title{
+                        font-weight: bold;
+                    }
+                }
+
+
                 & thead{
                     height: 14%;
                     text-decoration: underline;
@@ -406,6 +439,7 @@ header {
 
                 & .soft-table {
                     background-image: url("assets/leaves.jpg");
+                    object-fit: cover;
                     height: 100%;
                     width: 60vw;
                     border-collapse: collapse;
@@ -423,7 +457,7 @@ header {
 
 
                     & tbody tr:nth-child(odd) {
-                        background: linear-gradient(90deg, #151515 10%, #faebd754 60%, #151515 90%);
+                        background: linear-gradient(90deg, #151515 10%, #47454263 60%, #151515 90%);
                     }
 
                     & tbody tr:nth-child(even) {
@@ -438,8 +472,17 @@ header {
         grid-area: right1;
         color: white;
         z-index: 3;
+        & .diploma-title{
+            margin-bottom: 3%;
+        }
         & .year{
-            margin-top: 5%;
+            font-size: 1rem;
+        }
+        & p{
+            margin-bottom: 3%;
+        }
+        & .location{
+            font-style: italic;
         }
     }
 
@@ -449,8 +492,7 @@ header {
         z-index: 3;
 
         & .lang-title{
-            text-decoration: underline;
-            margin-bottom: 1%;
+            margin-bottom: 3%;
         }
 
         & p{
@@ -459,6 +501,109 @@ header {
     }
 }
 
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: overlay;
+    background-image: url(assets/forest.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    & .shadow-form-top {
+        background: linear-gradient(to bottom, #151515, transparent);
+        height: 140px;
+        width: 100%;
+        left: 0;
+        z-index: 2;
+    }
+
+    & .contact-me {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & .contact-title{
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            margin-top: -13px;
+
+        }
+
+        & .contact-me-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & .form-container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+
+    }
+
+    & .contact-me form input:not(:last-child), .contact-me form textarea {
+        background-color: #00000085;
+        border: none;
+        border-bottom: 1px solid white;
+        margin-bottom: 20px;
+        color: inherit;
+        outline: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    & .contact-me form input[type="submit"] {
+        height: 10%;
+        background-color: #00000085;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        color: inherit;
+        outline: none;
+        margin: 10px 5px;
+    }
+
+    & .contact-info-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        & .phone-info{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            & p{
+                margin-left: 5%;
+            }
+        }
+        & .address-info{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            & p{
+                margin-left: 5%;
+            }
+        }
+    }
+}
 
 .footer-section {
     height: 10vh;
@@ -487,6 +632,4 @@ header {
         }
     }
 }
-
-
 

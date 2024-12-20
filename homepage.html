@@ -16,12 +16,12 @@
             </div>
         </div>
     </nav>
-    <h1 class="big-title" data-speed="0.1">Discover.</h1>
-    <img src="assets/person.png" class="person" alt="">
-    <img src="assets/mountain1.png" class="mountain1" alt="">
-    <img src="assets/mountain2.png" class="mountain2" alt="">
-    <img src="assets/mountain3.png" class="mountain3" alt="">
-    <img src="assets/sky2.png" class="sky" alt="">
+    <h1 class="big-title transition" data-speed="0.1">Discover.</h1>
+    <img src="assets/person.png" class="person transition" data-speed="-0.2" alt="">
+    <img src="assets/mountain1.png" class="mountain1 transition" data-speed="-0.2" alt="">
+    <img src="assets/mountain2.png" class="mountain2 transition" data-speed="0.1" alt="">
+    <img src="assets/mountain3.png" class="mountain3 transition" data-speed="0.4" alt="">
+    <img src="assets/sky2.png" data-speed="0.5" class="sky transition" alt="">
 </header>
 <section class="section-about-me">
         <div class="shadow"></div>
@@ -30,11 +30,15 @@
              <h3 class="about-me-title">
                 About me
                 </h3>
-                <p class="about-me-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque officiis quos expedita ipsa, a quidem inventore voluptates debitis accusamus tenetur qui et voluptas dicta, culpa earum, doloribus odio consectetur consequuntur soluta quasi nobis! Deserunt voluptatum reiciendis iure expedita sequi quisquam laboriosam temporibus exercitationem.</p>
+                <p class="about-me-text">Hello, my name is Maiko Vos.<br><br>
+                    I love nature, hiking, travelling, watching movies and gaming.
+                    I am also passionate about designing and developing websites and applications.
+                    After working in the construction industry for more than 10 years, I decided to make my dream come true and become a programmer. College has already been an adventure, but I am determined to make it happen.<br><br>
+                    Welcome to my website!
+                </p>
             </div>
-
                 <div class="imgContainer">
-                <img class="about-me-img" src="assets/Me1.jpg" alt="">
+                    <a class="img-link" href="https://www.linkedin.com/in/maiko-vos-2550b4246/" target="_blank"><img class="about-me-img" src="assets/Me1.jpg" alt="picture of Maiko Vos"></a>
             </div>
         </div>
 </section>
@@ -43,40 +47,53 @@
     <div class="shadow-work-exp-top"></div>
     <div class="shadow-work-exp-bottom"></div>
     <div class="work-exp-container">
+        <div class="work-exp-title">
+            <h3>Work experience</h3>
+        </div>
         <ul class="work-exp-list">
             <li class="work-exp-item">
                 <span class='item-title'>2014-2015</span>
                 <div class="content">
                     <h3>D&C Schrijnwerkerij en dakwerken bvba</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cupiditate debitis dolor illum minima nulla porro quasi quod repudiandae saepe!</p>
+                    <p><span>Roofing carpenter</span><br>
+                        Working on roofing projects: constructing and installing trusses and sheathing, installing roof tiles, attaching shingles
+                    </p>
                 </div>
             </li>
             <li class="work-exp-item">
                 <span class='item-title'>2015-2016</span>
                 <div class="content">
-                    <h3>Nike Laakdal</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eveniet fugiat ipsam neque nulla tenetur veniam! Aliquam at fuga quisquam?</p>
+                    <h3>Nike (European Logistics Center)</h3>
+                    <p><span>Order picker</span><br>
+                        Picking orders for stores using a scanner, packing orders onto pallets, loading lorries for deliveries.
+                    </p>
                 </div>
             </li>
             <li class="work-exp-item">
                 <span class='item-title'>2016-2018</span>
                 <div class="content">
                     <h3>Micoli Nico bvba</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum delectus dolores error harum ipsum libero officiis ratione, repellat rerum.</p>
+                    <p><span>Kitchen fitter</span><br>
+                        Fitting kitchens and worktops, performing trim carpentry tasks including installation of moldings and baseboards.
+                    </p>
                 </div>
             </li>
             <li class="work-exp-item">
                 <span class='item-title'>2018-2019</span>
                 <div class="content">
                     <h3>G&S Siliconenwerken bvba</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum nihil odio quis, rerum voluptate voluptatem! Accusamus quos ratione voluptatem.</p>
+                    <p><span>Sealant applicator</span><br>
+                        Applying sealant to seal joints and seams in construction projects.
+                    </p>
                 </div>
             </li>
             <li class="work-exp-item">
                 <span class='item-title'>2019-2023</span>
                 <div class="content">
                     <h3>Deaplus - Nuno Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius error impedit libero modi officia quod quos rem tempore tenetur.</p>
+                    <p><span>Joiner and kitchen fitter</span><br>
+                        Operating joinery machines, checking that the order is complete, carefully packing the assembles kitchen cabinets and the worktops.<br>Fitting kitchens and worktops, performing trim carpentry tasks including installation of moldings and baseboards.
+                    </p>
                 </div>
             </li>
         </ul>
@@ -99,13 +116,21 @@
                             <td>programming in C#</td>
                         </tr>
                         <tr>
-                            <td>writing in HTML</td>
+                            <td>writing HTML</td>
                         </tr>
                         <tr>
-                            <td>writing in CSS</td>
+                            <td>writing CSS</td>
                         </tr>
                     </tbody>
                 </table>
+                <div class="hard-text">
+                    <p class="hard-text-title">Hard skills</p>
+                    <div class="hard-text-content">
+                        <p>programming in C#</p>
+                        <p>writing HTML</p>
+                        <p>writing CSS</p>
+                    </div>
+                </div>
             </div>
             <div class="soft-skills">
                 <table class="soft-table">
@@ -135,50 +160,84 @@
                         </tr>
                     </tbody>
                 </table>
+                <div class="soft-text">
+                    <p class="soft-text-title">Soft skills</p>
+                    <div class="soft-text-content">
+                        <p>accurate</p>
+                        <p>eager to learn</p>
+                        <p>problem-solving</p>
+                        <p>creative</p>
+                        <p>team player</p>
+                        <p>responsible</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="diploma-section">
         <div class="diploma-container">
+            <h3 class="diploma-title">Degrees and certificates</h3>
             <h3 class="year">2014</h3>
-            <p>Secundary education diploma in Special joinery structures<br>
-                Wico campus Tio Overpelt
+            <p>Secondary education diploma in Special joinery structures<br>
+                <span class="location">Wico campus Tio Overpelt</span>
             </p>
             <h3 class="year">2023-2024</h3>
             <p>Course “Basic programming with Python”<br>
-                CVO de Verdieping Heusden – Zolder
+                <span class="location">CVO de Verdieping Heusden – Zolder</span>
             </p>
             <h3 class="year">2024-2026</h3>
             <p>Student “Associate degree computer programming”<br>
-                PXL Hasselt
+                <span class="location">University College PXL Hasselt</span>
             </p>
         </div>
     </section>
     <section class="languages-section">
         <div class="lang-container">
-            <h4 class="lang-title">Language knowledge</h4>
-            <p>Nederlands &emsp; <progress max="100" value="100">90%</progress> 100%</p>
+            <h3 class="lang-title">Language proficiency</h3>
+            <p>Fluent in Dutch (native) &emsp; <progress class="progress-dutch" max="100" value="100">90%</progress></p>
 
-            <p>Engels &emsp;&emsp;&emsp;&ensp; <progress max="100" value="80">80%</progress> 80%</p>
+            <p>Conversant in English (B1) &ensp; <progress max="100" value="80">80%</progress></p>
 
         </div>
     </section>
 </article>
 <section class="form-section">
-
+    <div class="shadow-form-top"></div>
+    <div class="contact-me">
+        <h3 class="contact-title">Contact me</h3>
+        <div class="contact-me-container">
+            <form class="form-container" action="mailto:voorbeeld@gmail.com?subject=(De tekst in het onderwerp in uw mail)" enctype="text/plain" method="post">
+                <input type="text" name="name" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="E-mail" required="">
+                <input type="text" name="subject" placeholder="Subject" required="">
+                <textarea name="messageForMe" rows="10" placeholder="Message" required=""></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div class="contact-info-container">
+            <div class="phone-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>
+                <p>+32 494 92 45 10</p>
+            </div>
+            <div class="address-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg>
+                <p>Houthalen-Helchteren</p>
+            </div>
+        </div>
+    </div>
 </section>
 <footer class="footer-section">
     <div class="footer-left">
-        <p>Maiko Vos - 1PROA</p>
+        <p>Maiko Vos 1PROA</p>
     </div>
     <div class="footer-middle">
         <p>Assignment curriculum vitae</p>
     </div>
-
     <div class="footer-right">
         <a href="#" class="back-to-top"><svg class="top-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M5 15h4v6h6v-6h4l-7-8zM4 3h16v2H4z"></path></svg></a>
         <p class="top-text">Top</p>
     </div>
 </footer>
+<script src="homepage.js"></script>
 </body>
 </html>
