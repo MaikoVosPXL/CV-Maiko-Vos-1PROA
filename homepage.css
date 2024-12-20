@@ -633,3 +633,168 @@ header {
     }
 }
 
+@media screen and (max-width: 480px){
+    header .big-title {
+        font-size: 3rem
+    }
+
+    .section-about-me .about-me-container {
+        grid-template-columns:1fr;
+    }
+
+    .section-about-me .about-me-container {
+        .imgContainer {
+            margin: 10%;
+        }
+        .about-me-content .about-me-title{
+            font-size: 1.2rem;
+        }
+        .about-me-content .about-me-title::before{
+            width: 31%;
+        }
+    }
+
+    .section-about-me .about-me-text {
+        font-size: .8rem;
+    }
+
+    .work-exp-section .work-exp-background{
+        object-fit: cover;
+    }
+
+    .work-exp-section .work-exp-container{
+        height: 87%;
+    }
+
+    .work-exp-section .work-exp-container .work-exp-title h3{
+        font-size: 1.2rem;
+    }
+
+    .work-exp-section .work-exp-container .work-exp-list{
+        padding-left: 0;
+        width: 70%;
+
+    }
+
+    .work-exp-section .work-exp-container .work-exp-list .work-exp-item{
+        width: 100%;
+        font-size: .7rem;
+    }
+
+    .work-exp-section .work-exp-container .work-exp-list .work-exp-item::before{
+        left: -2px;
+        top: 15px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .work-exp-section .work-exp-container .work-exp-list .work-exp-item .item-title{
+        font-size: .8rem;
+        margin-left: 4%;
+    }
+
+    .work-exp-section .work-exp-container .work-exp-list .work-exp-item h3{
+        font-size: .7rem;
+    }
+
+    .skills-article{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        grid-template-areas:
+                "right1"
+                "right2"
+                "left";
+    }
+
+    .skills-article .languages-section .lang-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .skills-article .languages-section .lang-container .lang-title{
+        font-size: 1rem;
+    }
+
+    .skills-article .languages-section .lang-container p{
+        font-size: .8rem;
+    }
+
+    .skills-article .languages-section .lang-container .progress-dutch{
+        margin-left: 10px;
+    }
+
+    .skills-article .diploma-section .diploma-container{
+        text-align: center;
+    }
+
+    .skills-article .diploma-section .diploma-container .diploma-title{
+        font-size: 1rem;
+    }
+
+    .skills-article .diploma-section .diploma-container .year{
+        font-size: 1rem;
+    }
+
+    .skills-article .diploma-section .diploma-container p{
+        font-size: .8rem;
+    }
+
+    .skills-article .skills-section .skills-container{
+        height: 84%;
+    }
+
+    .skills-article .skills-section .skills-container .hard-skills .hard-table{
+        display: none;
+    }
+
+    .skills-article .skills-section .skills-container .hard-skills .hard-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-article .skills-section .skills-container .soft-skills .soft-table{
+        display: none;
+    }
+
+    .skills-article .skills-section .skills-container .soft-skills .soft-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-article .skills-section .skills-container .hard-skills{
+        width: 100%;
+    }
+
+    .skills-article .skills-section .skills-container .hard-skills .hard-text .hard-text-content{
+        font-size: .8rem;
+    }
+
+    .skills-article .skills-section .skills-container .soft-skills .soft-text .soft-text-content{
+        font-size: .8rem;
+    }
+
+    .form-section .contact-me .contact-title{
+        font-size: 2rem;
+        margin-top: -40px;
+        margin-bottom: 25px;
+    }
+
+    .form-section .contact-me{
+        width: 70%
+    }
+
+    .form-section .contact-me .contact-info-container{
+        margin-top: 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-section p{
+        font-size: .8rem;
+    }
+}
