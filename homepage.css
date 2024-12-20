@@ -384,6 +384,7 @@ header {
 
                 & .hard-text{
                     display: none;
+
                     & .hard-text-title{
                         font-weight: bold;
                     }
@@ -426,6 +427,7 @@ header {
 
                 & .soft-text{
                     display: none;
+
                     & .soft-text-title{
                         font-weight: bold;
                     }
@@ -630,6 +632,32 @@ header {
         & .top-text {
             margin-left: 15px;
         }
+    }
+}
+
+@media screen and (min-width: 1900px){
+
+    header .sky{
+        width: 100%;
+        bottom: 293px;
+    }
+
+    header .mountain3{
+        width: 60%;
+    }
+
+    header .mountain2{
+        width: 70%;
+    }
+
+    header .mountain1{
+        width: 108%;
+        bottom: -150px;
+    }
+
+    header .person{
+        width: 50%;
+        bottom: -150px;
     }
 }
 
